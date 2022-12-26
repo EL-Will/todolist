@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container pos-center p-l-0 p-r-0">
+        <div class="row format-row">
+            <div class="col-lg-3 col-xl-3 col-md-2 col-1"></div>
+            <div class="col-lg-6 col-xl-6 col-md-8 col-10 box-farther-todoapp">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-12 box-child-1">
+                    <h1 class="text-center">Todo App</h1>
+                    <form action="" class="create-todo-form row format-row margin-top-20">
+                        <div class="col-lg-10 col-xl-10 col-md-10 col-10 padding-l-0">
+                            <input type="text" name="nameTodo" class="add-new-todo" placeholder="Add a new todo">
+                        </div>
+                        <button type="submit" class="col-lg-2 col-xl-2 col-md-2 col-2 padding-0 box-plus">
+                            <i class="fa-sharp fa-solid fa-plus"></i>
+                        </button>
+                    </form>
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-12 padding-0 padding-t-10 hide-spinner" id="spinnerLoading">
+                        <div class="spinner-border text-info"></div>
+                    </div>
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-12 padding-0 margin-top-10 show-scroll-bar" id="renderTodoContent">
+                    </div>
+                    <nav aria-label="Page navigation example" class="row format-row flex-page">
+                        <ul class="pagination margin-top-10 col-lg-10 col-xl-10 col-md-10 col-10 padding-l-0"
+                            id="renderNumberPage">
+                            <!-- <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            
+                            <li class="page-item"><a class="page-link" href="#">0</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                        <select name="" class="box-per-page col-lg-2 col-xl-2 col-md-2 col-2 padding-0" id="perPage">
+                            <option value="5" selected>5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                        </select>
+                    </nav>
+                    <form class="row format-row flex-page" id="clearForm">
+                        <div class="text-1 col-lg-9 col-xl-9 col-md-9 col-9 padding-l-0"></div>
+                        <div class="col-lg-3 col-xl-3 col-md-3 col-3 padding-0 flex-btn-clear">
+                            <button type="button" class="clear-all-btn">Clear All</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-2 col-1"></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
